@@ -111,3 +111,13 @@ update the the env-vars file with the command below to activate the load balance
 enable_nginx_lb: true
 load_balancer_is_required: true
 
+ You have to ensure nginx has been uploaded in both servers as it is the load balancer we decided to use in this project.
+
+![image](https://github.com/NANA-2016/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES-1/assets/141503408/1c2a1f12-67ce-498f-902a-fd5fdff6ff32)
+
+![image](https://github.com/NANA-2016/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES-1/assets/141503408/73fbf953-8926-4099-acb0-2fd55c2a5d88)
+
+I could not use the VS CODE in all my implementation as my LAPTOP SSH is not working.
+
+
+
