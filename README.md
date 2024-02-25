@@ -20,7 +20,7 @@ enviroments with different unique attributes
 
 Using the code below, which allows differentiation of different features of the module  by 
 
-using include_vars instead of include  in the env-vars.yml file.
+##### using include_vars instead of include  in the env-vars.yml file.
 
 ---
 - name: collate variables from env specific file, if it exists
@@ -39,7 +39,7 @@ using include_vars instead of include  in the env-vars.yml file.
       tags:
         - always
 
- Next step is to update site.yml file in the playbook folder  withthe command below to allow
+##### Next step is to update site.yml file in the playbook folder  withthe command below to allow
  
  use of dynamic assigments
 
@@ -84,7 +84,7 @@ All these will be found of the roles folder
 
 ![image](https://github.com/NANA-2016/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES-1/assets/141503408/d8b79425-60df-4fc4-942e-095d7aff50c3)
 
-   Declare a variable in default/main.yml inside nginx and apache roles folders and name each variable to enable_nginx_lb and enable_apache _lb as well as the
+ #####  Declare a variable in default/main.yml inside nginx and apache roles folders and name each variable to enable_nginx_lb and enable_apache _lb as well as the
    Load_balancer_is _required:false
 
    seen ats the last two lines on the page
@@ -92,14 +92,14 @@ All these will be found of the roles folder
 ![image](https://github.com/NANA-2016/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES-1/assets/141503408/3a57699b-f58b-4048-b47b-c610eebe5775)
 
 
-Also you need to update site.yml with the code below
+##### Also you need to update site.yml with the code below
 
      - name: Loadbalancers assignment
        hosts: lb
          - import_playbook: ../static-assignments/loadbalancers.yml
         when: load_balancer_is_required 
 
-Update the load balancer 
+#### Update the load balancer 
 
 - hosts: lb
   roles:
@@ -117,7 +117,8 @@ load_balancer_is_required: true
 
 ![image](https://github.com/NANA-2016/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES-1/assets/141503408/73fbf953-8926-4099-acb0-2fd55c2a5d88)
 
-I could not use the VS CODE in all my implementation as my LAPTOP SSH is not working.
+
+###### I could not use the VS CODE in all my implementation as my LAPTOP SSH is not working.
 
 
 
